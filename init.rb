@@ -4,7 +4,7 @@ Apiculture.register_template do |builder|
                                            :default => template_options["package_name"])
   end
 
-  builder.generate do |template_options, destination|
+  builder.generate do |outputter, destination|
     create_file("Manifest.java") do
       "public class Manifest {}"
     end
